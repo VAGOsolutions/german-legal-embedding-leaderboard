@@ -1,0 +1,7 @@
+# Benchmark script (protocol 1.0): versions used for the reference measurements
+torch>=2.6
+sentence-transformers==6.2.0
+transformers==5.22.1
+datasets>=3.0
+huggingface_hub>=0.30
+numpy>=1.26

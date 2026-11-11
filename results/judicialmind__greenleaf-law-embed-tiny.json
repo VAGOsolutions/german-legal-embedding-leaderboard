@@ -1,0 +1,98 @@
+{
+  "id": "greenleaf-tiny",
+  "model_name": "greenleaf-law-embed-tiny",
+  "organization": "judicialmind",
+  "model_type": "open",
+  "embedding_type": "Dense",
+  "dimension": 1024,
+  "max_tokens": 32768,
+  "parameters": 596000000,
+  "model_url": "https://huggingface.co/judicialmind/greenleaf-law-embed-tiny",
+  "paper_url": null,
+  "metrics": {
+    "legalquad": {
+      "ndcg_at_10": 0.5883
+    },
+    "gerdalir_small": {
+      "ndcg_at_10": 0.3852
+    },
+    "gerlayqa": {
+      "ndcg_at_10": 0.221
+    },
+    "gerlerb": {
+      "ndcg_at_10": 0.6516
+    },
+    "openlegalretrieval_de": {
+      "ndcg_at_10": 0.4102,
+      "subtasks": {
+        "t1": 0.9242,
+        "t2": 0.3307,
+        "t3": 0.2863,
+        "t4": 0.338,
+        "t5": 0.397,
+        "t6": 0.2098,
+        "t7": 0.3852
+      }
+    }
+  },
+  "notes": "Measured by VAGO Solutions (Nov 2026) with the same protocol for every model: documents up to 8,192 tokens (or the model maximum), query prompts/instructions as in the model card, nDCG@10.",
+  "source": "vago",
+  "protocol": {
+    "script": "VAGO Solutions internal (identical to benchmark/run_benchmark.py)",
+    "version": "1.0",
+    "date": "2026-11",
+    "settings": {
+      "format": "st",
+      "dtype": "bf16",
+      "max_seq_length": 8192,
+      "doc_prompt": ""
+    },
+    "tasks": {
+      "legalquad": {
+        "n_queries": 200,
+        "n_docs": 200
+      },
+      "gerdalir_small": {
+        "n_queries": 12234,
+        "n_docs": 9969
+      },
+      "gerlayqa": {
+        "n_queries": 2152,
+        "n_docs": 2377
+      },
+      "gerlerb": {
+        "n_queries": 367,
+        "n_docs": 89851
+      },
+      "openlegalretrieval_de.t1": {
+        "n_queries": 1178,
+        "n_docs": 111555
+      },
+      "openlegalretrieval_de.t2": {
+        "n_queries": 555,
+        "n_docs": 52543
+      },
+      "openlegalretrieval_de.t3": {
+        "n_queries": 819,
+        "n_docs": 111555
+      },
+      "openlegalretrieval_de.t4": {
+        "n_queries": 310,
+        "n_docs": 111555
+      },
+      "openlegalretrieval_de.t5": {
+        "n_queries": 6373,
+        "n_docs": 111555
+      },
+      "openlegalretrieval_de.t6": {
+        "n_queries": 2151,
+        "n_docs": 2377
+      },
+      "openlegalretrieval_de.t7": {
+        "n_queries": 12234,
+        "n_docs": 9969
+      }
+    }
+  },
+  "contamination": []
+}

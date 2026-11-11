@@ -1,0 +1,55 @@
+{
+  "id": "intfloat-multilingual-e5-small",
+  "model_name": "multilingual-e5-small",
+  "organization": "intfloat",
+  "model_type": "open",
+  "embedding_type": "Dense",
+  "dimension": 384,
+  "max_tokens": 512,
+  "parameters": 117653760,
+  "model_url": "https://huggingface.co/intfloat/multilingual-e5-small",
+  "paper_url": null,
+  "license": "mit",
+  "metrics": {
+    "gerlayqa": {
+      "ndcg_at_10": 0.0674
+    }
+  },
+  "notes": "Measured with benchmark/run_benchmark.py (protocol 1.0).",
+  "source": "submission",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "protocol": {
+    "script": "benchmark/run_benchmark.py",
+    "version": "1.0",
+    "date": "2026-11-09",
+    "settings": {
+      "type": "dense",
+      "prompt_format": "e5",
+      "query_prompt": null,
+      "doc_prompt": null,
+      "max_length": 8192,
+      "batch_size": 16,
+      "dtype": "bf16",
+      "device": "cpu",
+      "torch": "2.15.0",
+      "contamination_declared": true,
+      "query_prompt_resolved": {
+        "legalquad": "query: ",
+        "gerdalir_small": "query: ",
+        "gerlayqa": "query: ",
+        "gerlerb": "query: "
+      },
+      "doc_prompt_resolved": "passage: ",
+      "max_seq_length": 512,
+      "sentence_transformers": "6.2.0",
+      "transformers": "5.22.1"
+    },
+    "tasks": {
+      "gerlayqa": {
+        "n_queries": 2152,
+        "n_docs": 2377
+      }
+    }
+  },
+  "contamination": []
+}

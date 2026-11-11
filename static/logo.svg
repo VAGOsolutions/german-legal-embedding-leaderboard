@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <!-- VAGO Cyan Accent Gradient -->
+    <linearGradient id="vagoCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <!-- VAGO Slash Gradient (Cyan to Purple/Magenta) -->
+    <linearGradient id="vagoSlashesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+  </defs>
+
+  <!-- "VAGO" Text with Cyan Left Stem on 'V' -->
+  <g>
+    <!-- 'V' Left Slanted Bar (Cyan Gradient) -->
+    <polygon points="12,10 27,10 41,52 26,52" fill="url(#vagoCyanGrad)" />
+    <!-- 'V' Right Slanted Bar (White) -->
+    <polygon points="56,10 41,10 26,52 41,52" fill="#FFFFFF" />
+
+    <!-- 'A' -->
+    <path d="M68 52 L84 10 L99 10 L115 52 L100 52 L96 40 L87 40 L83 52 Z M89.5 31 L93.5 31 L91.5 22 Z" fill="#FFFFFF" />
+
+    <!-- 'G' -->
+    <path d="M148 24 L134 24 C133 19 130 17 125 17 C118 17 114 22 114 31 C114 40 118 45 125 45 C130 45 133 42 134 38 L126 38 L126 31 L148 31 L148 44 C143 50 135 53 125 53 C109 53 100 44 100 31 C100 18 109 9 125 9 C136 9 144 14 148 24 Z" fill="#FFFFFF" />
+
+    <!-- 'O' -->
+    <path d="M168 9 C181 9 190 18 190 31 C190 44 181 53 168 53 C155 53 146 44 146 31 C146 18 155 9 168 9 Z M168 18 C161 18 157 23 157 31 C157 39 161 44 168 44 C175 44 179 39 179 31 C179 23 175 18 168 18 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- "SOLUTIONS" Subtitle + "//" -->
+  <g>
+    <text x="14" y="70" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="700" font-size="12.5" fill="#FFFFFF" letter-spacing="3.5">SOLUTIONS</text>
+    <!-- Slash 1 -->
+    <polygon points="126,59 132,59 124,73 118,73" fill="url(#vagoSlashesGrad)" />
+    <!-- Slash 2 -->
+    <polygon points="135,59 141,59 133,73 127,73" fill="url(#vagoSlashesGrad)" />
+  </g>
+</svg>

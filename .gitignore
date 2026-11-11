@@ -1,0 +1,9 @@
+# Python bytecode and test cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# local environment
+.venv/
+.env
+# local scratch folder
+submissions/

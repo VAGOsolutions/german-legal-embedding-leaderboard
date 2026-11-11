@@ -1,0 +1,21 @@
+{
+  "id": "mteb-voyage-4-large--api",
+  "model_name": "voyage-4-large (API) (MTEB)",
+  "organization": "Voyage AI",
+  "model_type": "proprietary",
+  "embedding_type": "Dense",
+  "dimension": null,
+  "max_tokens": null,
+  "parameters": null,
+  "model_url": null,
+  "paper_url": null,
+  "metrics": {
+    "legalquad": {
+      "ndcg_at_10": 0.7692
+    }
+  },
+  "notes": "Publicly reported value from the MTEB results archive (not measured by us, as of 3 Nov 2026); covers only LegalQuAD/GerDaLIR Small and is therefore not in the overall score.",
+  "source": "mteb",
+  "protocol": null,
+  "contamination": []
+}

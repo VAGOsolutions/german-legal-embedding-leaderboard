@@ -1,0 +1,39 @@
+# Validates every result file in results/ on pull requests (see CONTRIBUTING.md).
+# Lightweight: pydantic + pytest only, no torch/nicegui.
+name: validate-results
+
+on:
+  pull_request:
+    paths:
+      - "results/**"
+      - "data/schema.py"
+      - "config.py"
+      - "tests/test_results.py"
+      - "tests/check_pr_sources.py"
+      - "benchmark/example_result.json"
+  push:
+    branches: [main]
+    paths:
+      - "results/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history for the comparison with the base branch (source check)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies (schema check only)
+        run: pip install "pydantic>=2.10,<3" "pytest>=8.0"
+      - name: Validate result files
+        run: python -m pytest -q tests/test_results.py
+      # PRs from forks may only add/change submissions ("source": "submission"), never VAGO/MTEB entries
+      - name: Check source of external submissions
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+        run: python tests/check_pr_sources.py "origin/${{ github.base_ref }}"

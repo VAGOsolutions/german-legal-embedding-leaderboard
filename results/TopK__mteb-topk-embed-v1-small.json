@@ -1,0 +1,23 @@
+{
+  "id": "mteb-topk-embed-v1-small",
+  "model_name": "topk-embed-v1-small (MTEB) ⚠",
+  "organization": "TopK",
+  "model_type": "open",
+  "embedding_type": "Late-Interaction",
+  "dimension": null,
+  "max_tokens": null,
+  "parameters": 2200000000,
+  "model_url": null,
+  "paper_url": null,
+  "metrics": {
+    "legalquad": {
+      "ndcg_at_10": 0.8558
+    }
+  },
+  "notes": "Publicly reported value from the MTEB results archive (not measured by us, as of 3 Nov 2026); covers only LegalQuAD/GerDaLIR Small and is therefore not in the overall score. ⚠ According to MTEB metadata trained on GerDaLIR.",
+  "source": "mteb",
+  "protocol": null,
+  "contamination": [
+    "gerdalir_small"
+  ]
+}

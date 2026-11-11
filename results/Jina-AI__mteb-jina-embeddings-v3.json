@@ -1,0 +1,24 @@
+{
+  "id": "mteb-jina-embeddings-v3",
+  "model_name": "jina-embeddings-v3 (MTEB)",
+  "organization": "Jina AI",
+  "model_type": "open",
+  "embedding_type": "Dense",
+  "dimension": null,
+  "max_tokens": null,
+  "parameters": 570000000,
+  "model_url": null,
+  "paper_url": null,
+  "metrics": {
+    "legalquad": {
+      "ndcg_at_10": 0.5935
+    },
+    "gerdalir_small": {
+      "ndcg_at_10": 0.3672
+    }
+  },
+  "notes": "Publicly reported value from the MTEB results archive (not measured by us, as of 3 Nov 2026); covers only LegalQuAD/GerDaLIR Small and is therefore not in the overall score.",
+  "source": "mteb",
+  "protocol": null,
+  "contamination": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "mteb-snowflake-arctic-embed-l-v2-0",
+  "model_name": "snowflake-arctic-embed-l-v2.0 (MTEB)",
+  "organization": "Snowflake",
+  "model_type": "open",
+  "embedding_type": "Dense",
+  "dimension": null,
+  "max_tokens": null,
+  "parameters": 568000000,
+  "model_url": null,
+  "paper_url": null,
+  "metrics": {
+    "legalquad": {
+      "ndcg_at_10": 0.6548
+    },
+    "gerdalir_small": {
+      "ndcg_at_10": 0.4272
+    }
+  },
+  "notes": "Publicly reported value from the MTEB results archive (not measured by us, as of 3 Nov 2026); covers only LegalQuAD/GerDaLIR Small and is therefore not in the overall score.",
+  "source": "mteb",
+  "protocol": null,
+  "contamination": []
+}

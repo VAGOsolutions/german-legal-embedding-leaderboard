@@ -1,0 +1,128 @@
+{
+  "name": "NanoBEIR-DE-Legal-Sample (BGB & BGH)",
+  "corpus": [
+    {
+      "_id": "doc_bgb_823",
+      "title": "§ 823 BGB Schadensersatzpflicht",
+      "text": "(1) Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet. (2) Die gleiche Verpflichtung trifft denjenigen, welcher gegen ein den Schutz eines anderen bezweckendes Gesetz verstößt."
+    },
+    {
+      "_id": "doc_bgb_280",
+      "title": "§ 280 BGB Schadensersatz wegen Pflichtverletzung",
+      "text": "(1) Verletzt der Schuldner eine Pflicht aus dem Schuldverhältnis, so kann der Gläubiger Ersatz des hierdurch entstehenden Schadens verlangen. Dies gilt nicht, wenn der Schuldner die Pflichtverletzung nicht zu vertreten hat."
+    },
+    {
+      "_id": "doc_bgb_433",
+      "title": "§ 433 BGB Vertragstypische Pflichten beim Kaufvertrag",
+      "text": "(1) Durch den Kaufvertrag wird der Verkäufer einer Sache verpflichtet, dem Käufer die Sache zu übergeben und das Eigentum an der Sache zu verschaffen. Der Verkäufer hat dem Käufer die Sache frei von Sach- und Rechtsmängeln zu verschaffen. (2) Der Käufer ist verpflichtet, dem Verkäufer den vereinbarten Kaufpreis zu zahlen und die gekaufte Sache abzunehmen."
+    },
+    {
+      "_id": "doc_bgb_437",
+      "title": "§ 437 BGB Rechte des Käufers bei Mängeln",
+      "text": "Ist die Sache mangelhaft, kann der Käufer, wenn die Voraussetzungen der folgenden Vorschriften vorliegen und soweit nicht ein anderes bestimmt ist, nach § 439 Nacherfüllung verlangen, nach den §§ 440, 323 und 326 Abs. 5 von dem Vertrag zurücktreten oder nach § 441 den Kaufpreis mindern und nach den §§ 440, 280, 281, 283 und 311a Schadensersatz verlangen."
+    },
+    {
+      "_id": "doc_bgb_535",
+      "title": "§ 535 BGB Inhalt und Hauptpflichten des Mietvertrags",
+      "text": "(1) Durch den Mietvertrag wird der Vermieter verpflichtet, dem Mieter den Gebrauch der Mietsache während der Mietzeit zu gewähren. Der Vermieter hat die Mietsache dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten. (2) Der Mieter ist verpflichtet, dem Vermieter die vereinbarte Miete zu entrichten."
+    },
+    {
+      "_id": "doc_bgb_536",
+      "title": "§ 536 BGB Mietminderung bei Sach- und Rechtsmängeln",
+      "text": "(1) Hat die Mietsache zur Zeit der Überlassung an den Mieter einen Mangel, der ihre Tauglichkeit zum vertragsgemäßen Gebrauch aufhebt, so ist der Mieter für die Zeit, in der die Tauglichkeit aufgehoben ist, von der Entrichtung der Miete befreit. Für die Zeit, während der die Tauglichkeit gemindert ist, hat er nur eine angemessen herabgesetzte Miete zu entrichten."
+    },
+    {
+      "_id": "doc_bgb_626",
+      "title": "§ 626 BGB Fristlose Kündigung aus wichtigem Grund",
+      "text": "(1) Das Dienstverhältnis kann von jedem Vertragsteil aus wichtigem Grund ohne Einhaltung einer Kündigungsfrist gekündigt werden, wenn Tatsachen vorliegen, auf Grund derer dem Kündigenden unter Berücksichtigung aller Umstände des Einzelfalles und unter Abwägung der Interessen beider Vertragsteile die Fortsetzung des Dienstverhältnisses nicht zugemutet werden kann."
+    },
+    {
+      "_id": "doc_bgb_812",
+      "title": "§ 812 BGB Herausgabeanspruch (Ungerechtfertigte Bereicherung)",
+      "text": "(1) Wer durch die Leistung eines anderen oder in sonstiger Weise auf dessen Kosten etwas ohne rechtlichen Grund erlangt, ist ihm zur Herausgabe verpflichtet. Diese Verpflichtung besteht auch dann, wenn der rechtliche Grund später wegfällt oder der mit einer Leistung nach dem Inhalt des Rechtsgeschäfts bezweckte Erfolg nicht eintritt."
+    },
+    {
+      "_id": "doc_bgb_985",
+      "title": "§ 985 BGB Herausgabeanspruch des Eigentümers",
+      "text": "Der Eigentümer kann von dem Besitzer die Herausgabe der Sache verlangen."
+    },
+    {
+      "_id": "doc_bgh_viii_zr_277_16",
+      "title": "BGH VIII ZR 277/16 – Schönheitsreparaturen bei unrenoviert übergebener Wohnung",
+      "text": "Die formularvertragliche Überwälzung der laufenden Schönheitsreparaturen auf den Mieter ist im Wohnraummietrecht unwirksam, sofern die Wohnung unrenoviert oder renovierungsbedürftig übergeben wurde und dem Mieter hierfür kein angemessener finanzieller Ausgleich gewährt wird."
+    }
+  ],
+  "queries": [
+    {
+      "_id": "q1",
+      "text": "Wann besteht ein deliktischer Anspruch auf Schadensersatz wegen widerrechtlicher Eigentums- oder Körperverletzung?"
+    },
+    {
+      "_id": "q2",
+      "text": "Welche Gewährleistungsrechte hat ein Käufer bei einer mangelhaften Kaufsache?"
+    },
+    {
+      "_id": "q3",
+      "text": "Unter welchen Voraussetzungen darf der Mieter die Miete wegen eines Mangels der Wohnung mindern?"
+    },
+    {
+      "_id": "q4",
+      "text": "Wann ist eine außerordentliche fristlose Kündigung eines Arbeits- oder Dienstverhältnisses zulässig?"
+    },
+    {
+      "_id": "q5",
+      "text": "Sind Klauseln zu Schönheitsreparaturen wirksam, wenn die Mietwohnung unrenoviert ohne Ausgleich übergeben wurde?"
+    },
+    {
+      "_id": "q6",
+      "text": "Wie kann die Rückforderung einer rechtsgrundlos geleisteten Zahlung nach Bereicherungsrecht erfolgen?"
+    }
+  ],
+  "qrels": [
+    {
+      "query-id": "q1",
+      "corpus-id": "doc_bgb_823",
+      "score": 1
+    },
+    {
+      "query-id": "q2",
+      "corpus-id": "doc_bgb_437",
+      "score": 2
+    },
+    {
+      "query-id": "q2",
+      "corpus-id": "doc_bgb_433",
+      "score": 1
+    },
+    {
+      "query-id": "q3",
+      "corpus-id": "doc_bgb_536",
+      "score": 2
+    },
+    {
+      "query-id": "q3",
+      "corpus-id": "doc_bgb_535",
+      "score": 1
+    },
+    {
+      "query-id": "q4",
+      "corpus-id": "doc_bgb_626",
+      "score": 1
+    },
+    {
+      "query-id": "q5",
+      "corpus-id": "doc_bgh_viii_zr_277_16",
+      "score": 2
+    },
+    {
+      "query-id": "q5",
+      "corpus-id": "doc_bgb_535",
+      "score": 1
+    },
+    {
+      "query-id": "q6",
+      "corpus-id": "doc_bgb_812",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "sauerkrautlm-moederncolbert-1.5m-legal-de",
+  "model_name": "SauerkrautLM-MoEdernColBERT-1.5M-Legal-DE",
+  "organization": "VAGO Solutions",
+  "model_type": "open",
+  "embedding_type": "MoE",
+  "dimension": 128,
+  "max_tokens": 8192,
+  "parameters": 1500000,
+  "model_url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M-Legal-DE",
+  "paper_url": null,
+  "notes": "MoEdernBERT architecture (mixture of experts), multi-vector/late interaction (128 d per token). Values as in the model card: documents up to 8,192 tokens, attention window from config.json; OpenLegalRetrieval-DE per task with the card's query/document lengths. LegalQuAD/GerLayQA cross-checked with sentence-transformers 6 (MultiVectorEncoder).",
+  "metrics": {
+    "legalquad": {
+      "ndcg_at_10": 0.8126
+    },
+    "gerdalir_small": {
+      "ndcg_at_10": 0.5119
+    },
+    "gerlayqa": {
+      "ndcg_at_10": 0.185
+    },
+    "gerlerb": {
+      "ndcg_at_10": 0.345
+    },
+    "openlegalretrieval_de": {
+      "ndcg_at_10": 0.3875,
+      "subtasks": {
+        "t1": 0.9149,
+        "t2": 0.3045,
+        "t3": 0.1486,
+        "t4": 0.296,
+        "t5": 0.397,
+        "t6": 0.1896,
+        "t7": 0.4621
+      }
+    }
+  },
+  "source": "vago",
+  "license": "cc-by-nc-4.0",
+  "protocol": {
+    "script": "VAGO Solutions internal (model card protocol; public benchmarks identical to benchmark/run_benchmark.py)",
+    "version": "1.0",
+    "date": "2026-11",
+    "settings": {
+      "document_length": 8192,
+      "olr_lengths": "per task as in the model card"
+    },
+    "tasks": {
+      "legalquad": {
+        "n_queries": 200,
+        "n_docs": 200
+      },
+      "gerdalir_small": {
+        "n_queries": 12234,
+        "n_docs": 9969
+      },
+      "gerlayqa": {
+        "n_queries": 2152,
+        "n_docs": 2377
+      },
+      "gerlerb": {
+        "n_queries": 367,
+        "n_docs": 89851
+      },
+      "openlegalretrieval_de.t1": {
+        "n_queries": 1178,
+        "n_docs": 111555
+      },
+      "openlegalretrieval_de.t2": {
+        "n_queries": 555,
+        "n_docs": 52543
+      },
+      "openlegalretrieval_de.t3": {
+        "n_queries": 819,
+        "n_docs": 111555
+      },
+      "openlegalretrieval_de.t4": {
+        "n_queries": 310,
+        "n_docs": 111555
+      },
+      "openlegalretrieval_de.t5": {
+        "n_queries": 6373,
+        "n_docs": 111555
+      },
+      "openlegalretrieval_de.t6": {
+        "n_queries": 2151,
+        "n_docs": 2377
+      },
+      "openlegalretrieval_de.t7": {
+        "n_queries": 12234,
+        "n_docs": 9969
+      }
+    }
+  },
+  "contamination": []
+}

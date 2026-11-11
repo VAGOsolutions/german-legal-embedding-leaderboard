@@ -1,0 +1,22 @@
+services:
+  leaderboard-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: german-legal-leaderboard
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./results:/app/results
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,24 @@
+{
+  "id": "mteb-openai-text-embedding-3-large--api",
+  "model_name": "OpenAI text-embedding-3-large (API) (MTEB)",
+  "organization": "OpenAI",
+  "model_type": "proprietary",
+  "embedding_type": "Dense",
+  "dimension": null,
+  "max_tokens": null,
+  "parameters": null,
+  "model_url": null,
+  "paper_url": null,
+  "metrics": {
+    "legalquad": {
+      "ndcg_at_10": 0.5634
+    },
+    "gerdalir_small": {
+      "ndcg_at_10": 0.3277
+    }
+  },
+  "notes": "Publicly reported value from the MTEB results archive (not measured by us, as of 3 Nov 2026); covers only LegalQuAD/GerDaLIR Small and is therefore not in the overall score.",
+  "source": "mteb",
+  "protocol": null,
+  "contamination": []
+}
